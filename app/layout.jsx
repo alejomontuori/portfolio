@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
             <div className="flex flex-col lg:flex-row gap-6">
               {/* Sidebar - ocupa todo el ancho en móvil, ancho fijo en desktop */}
               <aside className="grid justify-items-center w-full lg:w-80 rounded-l-xl p-4 bg-stone-800">
-                <div className="flex flex-row lg:flex-col lg:items-start gap-4 lg:gap-0">
+                <div className="flex flex-row lg:flex-col lg:items-center gap-4 lg:gap-0">
                   <div className="mb-0 lg:mb-4">
                     <Image
                       className="rounded-full"
@@ -23,10 +23,10 @@ export default function RootLayout({ children }) {
                     />
                   </div>
                   <div className="mb-0 lg:mb-6">
-                    <h1 className="text-2xl text-transparent bg-clip-text text-purple-500 font-bold">
+                    <h1 className="text-2xl  bg-clip-text text-purple-500 font-bold">
                       Alejo Montuori
                     </h1>
-                    <p className="text-lg text-transparent bg-clip-text text-purple-600 font-semibold">
+                    <p className="text-lg  bg-clip-text text-purple-600 font-semibold">
                       Software Developer
                     </p>
                   </div>
@@ -35,40 +35,40 @@ export default function RootLayout({ children }) {
                   <ul className="space-y-4">
                     <li className="flex flex-col sm:flex-row items-center sm:items-start gap-2">
                       <div className="text-center sm:text-left">
-                        <p className="text-transparent bg-clip-text text-purple-500 font-bold">
+                        <p className=" bg-clip-text text-purple-500 font-bold">
                           Email
                         </p>
-                        <p className="text-transparent bg-clip-text text-purple-600 font-semibold">
+                        <p className=" bg-clip-text text-purple-600 font-semibold">
                           alejomontuori12@gmail.com
                         </p>
                       </div>
                     </li>
                     <li className="flex flex-col sm:flex-row items-center sm:items-start gap-2">
                       <div className="text-center sm:text-left">
-                        <p className="text-transparent bg-clip-text text-purple-500 font-bold">
+                        <p className=" bg-clip-text text-purple-500 font-bold">
                           Phone
                         </p>
-                        <p className="text-transparent bg-clip-text text-purple-600 font-semibold">
+                        <p className=" bg-clip-text text-purple-600 font-semibold">
                           +54 261-3601823
                         </p>
                       </div>
                     </li>
                     <li className="flex flex-col sm:flex-row items-center sm:items-start gap-2">
                       <div className="text-center sm:text-left">
-                        <p className="text-transparent bg-clip-text text-purple-500 font-bold">
+                        <p className=" bg-clip-text text-purple-500 font-bold">
                           Age
                         </p>
-                        <p className="text-transparent bg-clip-text text-purple-600 font-semibold">
+                        <p className=" bg-clip-text text-purple-600 font-semibold">
                           25
                         </p>
                       </div>
                     </li>
                     <li className="flex flex-col sm:flex-row items-center sm:items-start gap-2">
                       <div className="text-center sm:text-left">
-                        <p className="text-transparent bg-clip-text text-purple-500 font-bold">
+                        <p className=" bg-clip-text text-purple-500 font-bold">
                           Location
                         </p>
-                        <p className="text-transparent bg-clip-text text-purple-600 font-semibold">
+                        <p className=" bg-clip-text text-purple-600 font-semibold">
                           Mendoza, Argentina
                         </p>
                       </div>
@@ -78,15 +78,15 @@ export default function RootLayout({ children }) {
               </aside>
 
               {/* Contenido principal */}
-              <div className="flex-1 p-4 bg-stone-800 rounded-r-xl">
+              <div className="p-4 bg-stone-800 rounded-r-xl w-full lg:max-w-[900px] lg:h-[calc(100vh-3rem)] lg:overflow-y-scroll scrollbar">
                 {/* Navegación */}
-                <div className="flex justify-center lg:justify-end sm:justify-end items-center h-10">
-                  <nav className="flex w-auto rounded-xl bg-purple-500 h-full px-8 items-center mb-6">
-                    <ul className="flex flex-row sm:flex-row justify-center sm:justify-end gap-4 sm:gap-4items-center">
+                <div className="flex justify-center w-full h-10 mb-6 lg:justify-center md:justify-end">
+                  <nav className="w-auto px-4 rounded-2xl bg-neutral-900 sm:px-8">
+                    <ul className="flex items-center gap-2 sm:gap-4">
                       <li>
                         <Link
                           href="/"
-                          className="w-full sm:w-auto px-4 py-2 hover:text-blue-600 transition-colors"
+                          className="block px-3 py-2 text-purple-400 text-sm sm:text-base whitespace-nowrap"
                         >
                           About me
                         </Link>
@@ -94,7 +94,7 @@ export default function RootLayout({ children }) {
                       <li>
                         <Link
                           href="/proyects"
-                          className="w-full sm:w-auto px-4 py-2 hover:text-blue-600 transition-colors"
+                          className="block px-3 py-2 text-purple-400 text-sm sm:text-base whitespace-nowrap"
                         >
                           Projects
                         </Link>
@@ -102,7 +102,7 @@ export default function RootLayout({ children }) {
                       <li>
                         <Link
                           href="/contacto"
-                          className="w-full sm:w-auto px-4 py-2 hover:text-blue-600 transition-colors"
+                          className="block px-3 py-2 text-purple-400 text-sm sm:text-base whitespace-nowrap"
                         >
                           Contact
                         </Link>
@@ -112,9 +112,7 @@ export default function RootLayout({ children }) {
                 </div>
                 {/* Área de contenido */}
                 <div className="flex justify-center">
-                  <div className="w-full border-4 border-yellow-400 p-4">
-                    {children}
-                  </div>
+                  <div className="w-full p-4">{children}</div>
                 </div>
               </div>
             </div>

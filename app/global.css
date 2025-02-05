@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    /* Estilo de la barra de scroll */
+    .scrollbar::-webkit-scrollbar {
+      width: 8px; /* Ancho de la barra */
+      height: 8px; /* Alto en scroll horizontal */
+    }
+  
+    /* Color de fondo de la barra */
+    .scrollbar::-webkit-scrollbar-track {
+      background: #1e1e1e; /* Fondo oscuro */
+      border-radius: 4px;
+    }
+  
+    /* Color y diseño del thumb (la parte deslizante) */
+    .scrollbar::-webkit-scrollbar-thumb {
+      background: #9333ea; /* Morado */
+      border-radius: 4px;
+    }
+  
+    /* Hover en el thumb */
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #7e22ce; /* Morado más oscuro */
+    }
+  }

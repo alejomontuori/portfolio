@@ -1,3 +1,5 @@
+import Icono from "./components/Icono";
+
 export default function Home() {
   return (
     <div className="">
@@ -18,7 +20,10 @@ export default function Home() {
         <h1 className="text-white font-bold p-2">Technologies</h1>
         <div className="ps-8 p-2">
           <h3 className="text-white font-semibold">Backend</h3>
-          
+          <Icono size={50} info={{
+            dir: "/django.svg",
+            nom: "django"
+          }}></Icono>
         </div>
       </div>
     </div>

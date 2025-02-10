@@ -1,9 +1,16 @@
 import Image from "next/image";
 
-export default function Icono({ src, alt }) {
+export default function Icono({ info, size }) {
   return (
-    <div className="flex justify-center items-center w-16 h-16 bg-gray-800 rounded-lg p-2">
-      <Image src={src} alt={alt} width={50} height={50} className="object-contain" />
+    <div className="w-16 border-4 border-yellow-300" >
+      <Image
+        src={info.dir}
+        alt={info.nom}
+        width={size}
+        height={size}
+        style={{ width: size, height: size }}
+        className="object-contain"
+      />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Icono({ info, size }) {
   return (
-    <div className="w-16 border-4 border-yellow-300" >
+    <div className="w-16 p-2 text-xs text-white" >
       <Image
         src={info.dir}
         alt={info.nom}

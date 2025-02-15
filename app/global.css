@@ -26,3 +26,7 @@
       background: #7e22ce; /* Morado más oscuro */
     }
   }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  

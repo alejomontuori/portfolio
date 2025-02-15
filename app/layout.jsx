@@ -5,14 +5,14 @@ import Link from "next/link";
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className="bg-neutral-900">
+      <body className="bg-neutral-900 overflow-scroll scrollbar-none">
         <main className="min-h-screen flex justify-center items-center p-4">
           <div className="w-full h-full max-w-4xl p-4">
             {/* Contenedor principal con dirección de columna en móvil y fila en desktop */}
             <div className="flex flex-col lg:flex-row gap-6">
               {/* Sidebar - ocupa todo el ancho en móvil, ancho fijo en desktop */}
               <aside className="grid justify-items-center w-full lg:w-80 rounded-l-xl p-4 bg-stone-800">
-                <div className="flex flex-row lg:flex-col lg:items-center gap-4 lg:gap-0">
+                <div className="flex flex-row items-center md:flex-row md:items-center lg:flex-col lg:items-center gap-4 lg:gap-0">
                   <div className="mb-0 lg:mb-4">
                     <Image
                       className="rounded-full"

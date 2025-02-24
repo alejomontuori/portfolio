@@ -6,8 +6,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className="bg-neutral-900 overflow-scroll scrollbar-none">
-        <main className="min-h-screen flex justify-center items-center p-4">
-          <div className="w-full h-full max-w-4xl p-4">
+        <main className="flex justify-center items-center p-4">
+          <div className="w-full h-full p-4">
             {/* Contenedor principal con dirección de columna en móvil y fila en desktop */}
             <div className="flex flex-col lg:flex-row gap-6">
               {/* Sidebar - ocupa todo el ancho en móvil, ancho fijo en desktop */}
@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
               </aside>
 
               {/* Contenido principal */}
-              <div className="p-4 bg-stone-800 rounded-r-xl w-full lg:max-w-[900px] lg:h-[calc(100vh-3rem)] lg:overflow-y-scroll scrollbar">
+              <div className="p-4 bg-stone-800 rounded-r-xl w-full lg:max-w-6xl lg:h-full lg:overflow-y-scroll scrollbar">
                 {/* Navegación */}
                 <div className="flex justify-center w-full h-10 mb-6 lg:justify-center md:justify-end">
                   <nav className="w-auto px-4 rounded-2xl bg-neutral-900 sm:px-8">
@@ -111,7 +111,7 @@ export default function RootLayout({ children }) {
                   </nav>
                 </div>
                 {/* Área de contenido */}
-                <div className="flex justify-center">
+                <div className="max-w-6xl h-full flex justify-center">
                   <div className="w-full p-4">{children}</div>
                 </div>
               </div>

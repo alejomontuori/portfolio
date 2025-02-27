@@ -1,7 +1,10 @@
-export default function contact() {
+import FormCont from "../components/FormCont";
+
+export default function Contact() {
 
     return(
-    <h1>Formulario de contacto</h1>
+    
+<FormCont/>
     
     );
     }

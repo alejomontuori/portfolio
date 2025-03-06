@@ -5,13 +5,13 @@ import Link from "next/link";
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className="bg-neutral-900 overflow-scroll scrollbar-none">
+      <body className="bg-neutral-900 lg:scrollbar">
         <main className="flex justify-center items-center p-4">
           <div className="w-full h-full p-4">
             {/* Contenedor principal con dirección de columna en móvil y fila en desktop */}
             <div className="flex flex-col lg:flex-row gap-6">
               {/* Sidebar - ocupa todo el ancho en móvil, ancho fijo en desktop */}
-              <aside className="grid justify-items-center w-full lg:w-80 rounded-l-xl p-4 bg-stone-800">
+              <aside className="grid justify-items-center w-full lg:h-screen lg:w-80 rounded-lg p-4 bg-stone-800">
                 <div className="flex flex-row items-center md:flex-row md:items-center lg:flex-col lg:items-center gap-4 lg:gap-0">
                   <div className="mb-0 lg:mb-4">
                     <Image
@@ -78,15 +78,15 @@ export default function RootLayout({ children }) {
               </aside>
 
               {/* Contenido principal */}
-              <div className="p-4 bg-stone-800 rounded-r-xl w-full lg:max-w-6xl lg:h-full lg:overflow-y-scroll scrollbar">
+              <div className="p-4 bg-stone-800 rounded-lg w-full lg:max-w-6xl lg:h-auto">
                 {/* Navegación */}
-                <div className="flex justify-center w-full h-10 mb-6 lg:justify-center md:justify-end">
-                  <nav className="w-auto px-4 rounded-2xl bg-neutral-900 sm:px-8">
+                <div className="sticky top-2 z-50 flex w-full h-10 mb-6 lg:justify-center justify-end">
+                  <nav className="w-auto px-4 rounded-2xl bg-purple-600 sm:px-8">
                     <ul className="flex items-center gap-2 sm:gap-4">
                       <li>
                         <Link
                           href="/"
-                          className="block px-3 py-2 text-purple-400 text-sm sm:text-base whitespace-nowrap"
+                          className="block px-3 py-2 text-stone-900 font-semibold text-sm sm:text-base whitespace-nowrap"
                         >
                           About me
                         </Link>
@@ -94,7 +94,7 @@ export default function RootLayout({ children }) {
                       <li>
                         <Link
                           href="/proyects"
-                          className="block px-3 py-2 text-purple-400 text-sm sm:text-base whitespace-nowrap"
+                          className="block px-3 py-2 text-stone-900 font-semibold text-sm sm:text-base whitespace-nowrap"
                         >
                           Projects
                         </Link>
@@ -102,7 +102,7 @@ export default function RootLayout({ children }) {
                       <li>
                         <Link
                           href="/contacto"
-                          className="block px-3 py-2 text-purple-400 text-sm sm:text-base whitespace-nowrap"
+                          className="block px-3 py-2 text-stone-900 font-semibold text-sm sm:text-base whitespace-nowrap"
                         >
                           Contact
                         </Link>

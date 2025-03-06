@@ -6,8 +6,7 @@ export default function Home() {
       <div className="bg-stone-900 p-1 rounded-md">
         <h1 className="text-white font-bold p-2">Sobre mi</h1>
         <p className="text-white p-2">
-          ¡Hola! Soy Alejo, técnico en desarrollo de software recientemente
-          egresado, con experiencia en tecnologías como Python, Java, SQL,
+          ¡Hola! Soy Alejo, técnico en desarrollo de software, con experiencia en tecnologías como Python, Java, SQL,
           JavaScript, y Node.js, entre otras. Poseo conocimientos en modelado
           UML y me destaco por mis habilidades en colaboración en equipo,
           comunicación asertiva, y adaptabilidad, lo que me permite contribuir

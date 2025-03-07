@@ -16,27 +16,34 @@ export default function RootLayout({ children }) {
                   <div className="mb-0 lg:mb-4">
                     <Image
                       className="rounded-full"
-                      src="/profil.jpg"
+                      src="/perfil2.jpg"
                       alt="Foto de Alejo Monturoi"
                       width={200}
                       height={200}
                     />
                   </div>
                   <div className="mb-0 lg:mb-6">
-                    <h1 className="text-2xl  bg-clip-text text-purple-500 font-bold">
+                    <h1 className="text-2xl bg-clip-text text-purple-500 font-bold">
                       Alejo Montuori
                     </h1>
                     <p className="text-lg  bg-clip-text text-purple-600 font-semibold">
                       Software Developer
                     </p>
                   </div>
+                  <a
+                    href="/AlejoMontuoriCv.pdf"
+                    download="Alejo-Montuori-CV.pdf"
+                    className="bg-purple-500 text-sm text-center font-semibold -mt-2 px-1 py-1 rounded-lg hover:border border-purple-700 hover:bg-purple-700"
+                  >
+                    Descargar CV
+                  </a>
                 </div>
                 <div className="hidden lg:block">
                   <ul className="space-y-4">
                     <li className="flex flex-col sm:flex-row items-center sm:items-start gap-2">
                       <div className="text-center sm:text-left">
                         <p className=" bg-clip-text text-purple-500 font-bold">
-                          Email
+                          Correo
                         </p>
                         <p className=" bg-clip-text text-purple-600 font-semibold">
                           alejomontuori12@gmail.com
@@ -46,7 +53,7 @@ export default function RootLayout({ children }) {
                     <li className="flex flex-col sm:flex-row items-center sm:items-start gap-2">
                       <div className="text-center sm:text-left">
                         <p className=" bg-clip-text text-purple-500 font-bold">
-                          Phone
+                          Telefono
                         </p>
                         <p className=" bg-clip-text text-purple-600 font-semibold">
                           +54 261-3601823
@@ -56,7 +63,7 @@ export default function RootLayout({ children }) {
                     <li className="flex flex-col sm:flex-row items-center sm:items-start gap-2">
                       <div className="text-center sm:text-left">
                         <p className=" bg-clip-text text-purple-500 font-bold">
-                          Age
+                          Edad
                         </p>
                         <p className=" bg-clip-text text-purple-600 font-semibold">
                           25
@@ -66,7 +73,7 @@ export default function RootLayout({ children }) {
                     <li className="flex flex-col sm:flex-row items-center sm:items-start gap-2">
                       <div className="text-center sm:text-left">
                         <p className=" bg-clip-text text-purple-500 font-bold">
-                          Location
+                          Ubicación
                         </p>
                         <p className=" bg-clip-text text-purple-600 font-semibold">
                           Mendoza, Argentina
@@ -80,31 +87,31 @@ export default function RootLayout({ children }) {
               {/* Contenido principal */}
               <div className="p-4 bg-stone-800 rounded-lg w-full lg:max-w-6xl lg:h-auto">
                 {/* Navegación */}
-                <div className="sticky top-2 z-50 flex w-full h-10 mb-6 lg:justify-center justify-end">
-                  <nav className="w-auto px-4 rounded-2xl bg-purple-600 sm:px-8">
-                    <ul className="flex items-center gap-2 sm:gap-4">
+                <div className="sticky top-2 z-50 flex w-full h-10 mb-6 justify-center lg:justify-center">
+                  <nav className="w-auto px-4 rounded-2xl bg-purple-600 sm:px-8 shadow-[0px_5px_15px_rgba(147,51,234,0.6)]">
+                    <ul className="flex items-center space-x-2 lg:space-x-6">
                       <li>
                         <Link
                           href="/"
-                          className="block px-3 py-2 text-stone-900 font-semibold text-sm sm:text-base whitespace-nowrap"
+                          className="block px-3 py-2 text-stone-900 hover:bg-purple-900 transition-colors font-bold text-sm rounded-full sm:text-base whitespace-nowrap"
                         >
-                          About me
+                          Sobre mi
                         </Link>
                       </li>
                       <li>
                         <Link
                           href="/proyects"
-                          className="block px-3 py-2 text-stone-900 font-semibold text-sm sm:text-base whitespace-nowrap"
+                          className="block px-3 py-2 text-stone-900 hover:bg-purple-900 transition-colors font-bold text-sm rounded-full sm:text-base whitespace-nowrap"
                         >
-                          Projects
+                          Proyectos
                         </Link>
                       </li>
                       <li>
                         <Link
                           href="/contacto"
-                          className="block px-3 py-2 text-stone-900 font-semibold text-sm sm:text-base whitespace-nowrap"
+                          className="block px-3 py-2 text-stone-900  hover:bg-purple-900 transition-colors font-bold text-sm rounded-full sm:text-base whitespace-nowrap"
                         >
-                          Contact
+                          Contacto
                         </Link>
                       </li>
                     </ul>

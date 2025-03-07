@@ -3,8 +3,8 @@ import Icono from "./components/Icono";
 export default function Home() {
   return (
     <div className="">
-      <div className="bg-stone-900 p-1 rounded-md">
-        <h1 className="text-white font-bold p-2">Sobre mi</h1>
+      <div className="bg-stone-900 p-1 rounded-md shadow-[0px_5px_15px_rgba(0,0,0,1)]">
+        <h1 className="text-purple-500 text-xl font-bold p-2">Sobre mi</h1>
         <p className="text-white p-2">
           ¡Hola! Soy Alejo, técnico en desarrollo de software, con experiencia en tecnologías como Python, Java, SQL,
           JavaScript, y Node.js, entre otras. Poseo conocimientos en modelado
@@ -15,10 +15,10 @@ export default function Home() {
           web y de software.
         </p>
       </div>
-      <div className="bg-stone-900 p-1 mt-6 rounded-md">
-        <h1 className="text-white font-bold p-2">Tecnologias</h1>
+      <div className="bg-stone-900 p-1 mt-6 rounded-md shadow-[0px_5px_15px_rgba(0,0,0,1)]">
+        <h1 className="text-purple-500 text-xl font-bold p-2">Tecnologias</h1>
         <div className="flex flex-col items-center ps-8 p-2 lg:flex-col lg:items-center ">
-          <h3 className="text-white font-semibold">
+          <h3 className="text-purple-600 text-lg font-semibold">
             Lenguajes de programacion
           </h3>
           <div className="flex flex-row flex-wrap">
@@ -65,7 +65,7 @@ export default function Home() {
               }}
             ></Icono>
           </div>
-          <h3 className="mt-6 text-white font-semibold">
+          <h3 className="mt-6 text-purple-600 text-lg font-semibold">
             Frameworks y Librerías
           </h3>
           <div className="flex flex-row flex-wrap">
@@ -112,7 +112,7 @@ export default function Home() {
               }}
             ></Icono>
           </div>
-          <h3 className="mt-6 text-white font-semibold">
+          <h3 className="mt-6 text-purple-600 text-lg font-semibold">
               Base de datos
           </h3>
           <div className="flex flex-row flex-wrap">
@@ -131,7 +131,7 @@ export default function Home() {
               }}
             ></Icono>
           </div>
-          <h3 className="mt-6 text-white font-semibold">
+          <h3 className="mt-6 text-purple-600 text-lg font-semibold">
           Control de Versiones
           </h3>
           <div className="flex flex-row flex-wrap">

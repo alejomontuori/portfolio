@@ -38,21 +38,21 @@ const ContactForm = () => {
       <textarea name="message" placeholder="Mensaje" required className="mb-2 p-2 border" onChange={handleChange}></textarea>
       <button type="submit" className="bg-purple-500 text-white p-2">Enviar</button>
     </form>*/
-    <div className="bg-stone-900 p-1 rounded-md">
-      <h1 className="p-2 font-bold text-white">Contacto</h1>
+    <div className="bg-stone-900 p-1 rounded-md shadow-[0px_5px_15px_rgba(0,0,0,1)]">
+      <h1 className="p-2 font-bold text-purple-500 text-xl">Contacto</h1>
       <div className="flex flex-col items-center md:items-center sm:items-center sm:pt-0">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
           <div className="mt-8 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
-              <div className="p-6 mr-2 my-8 bg-stone-800 sm:rounded-lg">
+              <div className="p-6 my-8 bg-stone-800 sm:rounded-lg">
                 <h1 className="text-4xl sm:text-5xl text-purple-500 font-extrabold tracking-tight">
-                  Contactame
+                  Contáctame
                 </h1>
                 <p className="text-normal text-lg sm:text-2xl font-medium text-purple-600 mt-2">
                   Enviame un correo electronico
                 </p>
 
-                <div className="flex items-center mt-8 text-purple-600">
+                <div className="flex items-center mt-8 text-purple-600 shadow-inherit">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 384 512"

@@ -99,8 +99,8 @@ export default function RootLayout({ children }) {
               {/* Contenido principal */}
               <div className="p-4 bg-stone-800 rounded-lg w-full lg:max-w-6xl lg:h-auto">
                 {/* Navegación */}
-                <div className="sticky top-2 z-50 flex w-full h-10 mb-6 justify-center sm:justify-center lg:justify-center">
-                  <nav className="w-auto px-4 rounded-2xl bg-purple-600 shadow-[0px_5px_15px_rgba(147,51,234,0.6)]">
+                <div className="sticky top-2 z-50 flex xs:w-96 w-full h-10 mb-6 justify-center sm:justify-center lg:justify-center">
+                  <nav className="w-auto lg:px-4 rounded-2xl bg-purple-600 shadow-[0px_5px_15px_rgba(147,51,234,0.6)]">
                     <ul className="flex items-center space-x-2 lg:space-x-6">
                       <li>
                         <Link

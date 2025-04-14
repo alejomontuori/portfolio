@@ -49,7 +49,7 @@ const ContactForm = () => {
           <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div className="mt-8 overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="p-6 my-8 bg-stone-800 sm:rounded-lg">
+                <div className="p-6 my-8 bg-stone-800 rounded-lg">
                   <h1 className="text-4xl sm:text-5xl text-purple-500 font-extrabold tracking-tight">
                     Contáctame
                   </h1>
@@ -57,7 +57,7 @@ const ContactForm = () => {
                     Enviame un correo electronico
                   </p>
 
-                  <div className="flex items-center mt-8 text-purple-600 shadow-inherit">
+                  <div className="flex items-center mt-8 text-purple-600">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 384 512"
@@ -73,7 +73,7 @@ const ContactForm = () => {
                     </p>
                   </div>
 
-                  <div className="flex items-center mt-4 text-purple-600">
+                  <div className="flex items-center mt-4 w-56 text-purple-600 shadow-inherit border border-transparent hover:border-purple-500 rounded-md hover:scale-105 transition-all duration-300 ease-in-out">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -86,13 +86,15 @@ const ContactForm = () => {
                     </svg>
                     <a
                       className="ml-4 text-md tracking-wide font-semibold w-40"
-                      href="www.linkedin.com/in/alejo-montuoridev-9b26ba257"
+                      href="https://www.linkedin.com/in/alejo-montuoridev-9b26ba257"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Alejo Montuori
                     </a>
                   </div>
 
-                  <div className="flex items-center mt-2 text-purple-600">
+                  <div className="flex items-center mt-2 w-56 text-purple-600 shadow-inherit border border-transparent hover:border-purple-500 rounded-md hover:scale-105 transition-all duration-300 ease-in-out">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 496 512"
@@ -107,6 +109,8 @@ const ContactForm = () => {
 
                     <a
                       href="https://github.com/alejomontuori"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="ml-4 text-md tracking-wide font-semibold w-40"
                     >
                       alejomontuori

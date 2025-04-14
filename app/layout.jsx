@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
                     download="AlejoMontuoriCv.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-purple-500 text-sm text-center font-semibold -mt-2 px-1 py-1 rounded-lg hover:border border-purple-700 hover:bg-purple-700"
+                    className="bg-purple-500 text-sm text-center font-semibold -mt-2 px-1 py-1 rounded-lg hover:border border-purple-700 hover:bg-purple-700 hover:scale-105 transition-all duration-300 ease-in-out"
                   >
                     Descargar CV
                   </a>
@@ -101,7 +101,7 @@ export default function RootLayout({ children }) {
                 {/* Navegación */}
                 <div className="sticky top-2 z-50 flex xs:w-96 w-full h-10 mb-6 justify-center sm:justify-center lg:justify-center">
                   <nav className="w-auto lg:px-4 rounded-2xl bg-purple-600 shadow-[0px_5px_15px_rgba(147,51,234,0.6)]">
-                    <ul className="flex items-center space-x-2 lg:space-x-6">
+                    <ul className="flex items-center space-x-2 pt-0.5 lg:py-0 lg:space-x-6">
                       <li>
                         <Link
                           href="/"

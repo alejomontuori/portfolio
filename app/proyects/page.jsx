@@ -19,7 +19,7 @@ export default function proyect() {
           proyectos={{
             title: "TechStore",
             description:
-              "Proyecto desarrolado para el espacio curricular de Programación III, un e-commerce funcional desarrollado con Python, Django, SQLite, Tailwind CSS y CSS puro.",
+              "E-commerce funcional desarrollado con Python, Django, SQLite, Tailwind CSS y CSS puro. Con rol de administrador para gestionar productos, usuarios y pedidos.",
             images: [
               "/techStore1.webp",
               "/techStore2.webp",

@@ -1,4 +1,5 @@
 import Icono from "./components/Icono";
+import CertificateCard from "./components/CertificateComp";
 
 export default function Home() {
   return (
@@ -6,13 +7,15 @@ export default function Home() {
       <div className="bg-stone-900 p-1 rounded-md shadow-[0px_5px_15px_rgba(0,0,0,1)]">
         <h1 className="text-purple-500 text-xl font-bold p-2">Sobre mi</h1>
         <p className="text-white p-2">
-          ¡Hola! Soy Alejo, técnico en desarrollo de software, con experiencia en tecnologías como Python, Java, SQL,
-          JavaScript, y Node.js, entre otras. Poseo conocimientos en modelado
-          UML y me destaco por mis habilidades en colaboración en equipo,
-          comunicación asertiva, y adaptabilidad, lo que me permite contribuir
-          eficazmente a proyectos diversos. Actualmente, estoy en busca de
-          oportunidades para aplicar y expandir mis habilidades en el desarrollo
-          web y de software.
+          ¡Hola! Soy Alejo, técnico en desarrollo de software. Me caracterizo
+          por ser una persona proactiva y persistente, siempre enfocado en
+          encontrar la solución más eficaz para cada desafío. Poseo una gran
+          capacidad de adaptación, lo que me permite integrarme rápidamente a
+          nuevos equipos y dinámicas de trabajo. Valoro la comunicación clara y
+          el trabajo colaborativo como pilares para alcanzar los objetivos de
+          cualquier proyecto. Actualmente, busco una oportunidad para aportar mi
+          entusiasmo y mis habilidades a un equipo innovador en el área del
+          desarrollo.
         </p>
       </div>
       <div className="bg-stone-900 p-1 mt-6 rounded-md shadow-[0px_5px_15px_rgba(0,0,0,1)]">
@@ -34,13 +37,6 @@ export default function Home() {
               info={{
                 dir: "/java.svg",
                 nom: "Java",
-              }}
-            ></Icono>
-            <Icono
-              size={50}
-              info={{
-                dir: "/Php_dark.svg",
-                nom: "Php",
               }}
             ></Icono>
             <Icono
@@ -113,17 +109,17 @@ export default function Home() {
             ></Icono>
           </div>
           <h3 className="mt-6 text-purple-600 text-lg font-semibold">
-              Base de datos
+            Base de datos
           </h3>
           <div className="flex flex-row flex-wrap">
-          <Icono
+            <Icono
               size={50}
               info={{
                 dir: "/mysql.svg",
                 nom: "MySql",
               }}
             ></Icono>
-          <Icono
+            <Icono
               size={50}
               info={{
                 dir: "/sql-server.svg",
@@ -132,17 +128,17 @@ export default function Home() {
             ></Icono>
           </div>
           <h3 className="mt-6 text-purple-600 text-lg font-semibold">
-          Control de Versiones
+            Control de Versiones
           </h3>
           <div className="flex flex-row flex-wrap">
-          <Icono
+            <Icono
               size={50}
               info={{
                 dir: "/git.svg",
                 nom: "Git",
               }}
             ></Icono>
-          <Icono
+            <Icono
               size={50}
               info={{
                 dir: "/github-dark.svg",
@@ -150,6 +146,27 @@ export default function Home() {
               }}
             ></Icono>
           </div>
+        </div>
+      </div>
+
+      <div className="bg-stone-900 p-1 mt-6 rounded-md shadow-[0px_5px_15px_rgba(0,0,0,1)]">
+        <h1 className="text-purple-500 text-xl font-bold p-2">Certificados</h1>
+        <div className="grid grid-cols-1 gap-8 p-2 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-start">
+          <CertificateCard
+            title="TÉCNICO SUPERIOR EN DESARROLLO DE SOFTWARE"
+            description="Egresado en Instituto de Educación Superior N° 9-024 Lavalle - Mendoza"
+            url="/CertificadoTSDS.pdf"
+          />
+          <CertificateCard
+            title="AWS Educate Getting Started with Storage"
+            description="En este curso aprendí a utilizar Amazon S3 como solución de almacenamiento en la nube, comprendiendo cómo crear buckets, gestionar objetos y aplicar configuraciones de seguridad."
+            url="https://www.credly.com/badges/5e298573-12b4-4479-ba96-756cdde09c49/public_url"
+          />
+          <CertificateCard
+            title="AWS Educate Getting Started with Compute"
+            description="En este curso adquiri conocimentos sobre los diferentes tipos de cómputo disponibles en AWS y como crear y administrar instancias en Amazon EC2."
+            url="https://www.credly.com/badges/cbdc5e3d-5f09-4ce6-9f57-7e4402a426c1/public_url"
+          />
         </div>
       </div>
     </div>

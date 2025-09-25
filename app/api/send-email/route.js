@@ -7,11 +7,11 @@ export async function POST(req) {
     const { name, email, message } = await req.json();
 
     const data = await resend.emails.send({
-      from: "noreply@resend.dev",  // Debe ser un email verificado en Resend
-      to: "alejomontuori12@gmail.com",   // Donde recibirás los mensajes
+      from: "noreply@resend.dev",  
+      to: "alejomontuori12@gmail.com",
       subject: `Nuevo mensaje de ${name}`,
       text: message,
-      replyTo: email,  // Corrección aquí
+      replyTo: email,
     });
 
     return new Response(JSON.stringify({ success: true, data }), {

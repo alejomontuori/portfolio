@@ -31,6 +31,20 @@ export default function proyect() {
 
         <CardCarousel
           proyectos={{
+            title: "Portfolio Personal",
+            description:
+              "Mi sitio web profesional desarrollado con Next.js para un rendimiento óptimo y navegación fluida, Tailwind CSS para un diseño moderno y responsivo, Resend para gestionar el envío de correos de contacto y finalmente el deploy en vercel.",
+            images: [
+              "/portfolio1.webp",
+              "/portfolio2.webp",
+              "/portfolio3.webp",
+            ],
+            link: "https://github.com/alejomontuori/portfolio",
+          }}
+        />
+
+        <CardCarousel
+          proyectos={{
             title: "AuditaWeb",
             description:
               "Proyecto desarrollado para el espacio curricular Arquitectura y Diseño de Interfaces utilzando tecnologías como JavaScript, React, Material UI y CSS Modules.",
@@ -40,6 +54,19 @@ export default function proyect() {
               "/auditaweb1.webp",
             ],
             link: "https://github.com/Belen-Humbert/proyecto-interfaces.git",
+          }}
+        />
+        <CardCarousel
+          proyectos={{
+            title: "Bazar AyB - Landing Page",
+            description:
+              "Web desarrollada con React y TailwindCSS para un bazar local. Incluye catálogo de productos, sección sobre nosotros, contacto mediante WhatsApp e Instagram y diseño totalmente responsive. Desplegada en Netlify.",
+            images: [
+              "/bazar1.webp",
+              "/bazar2.webp",
+              "/bazar3.webp",
+            ],
+            link: "https://github.com/alejomontuori/webBazarAyB",
           }}
         />
       </div>

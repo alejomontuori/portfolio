@@ -1,0 +1,16 @@
+<!-- api-rest-square.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Icono API REST">
+  <!-- fondo redondeado -->
+  <rect x="2" y="2" width="60" height="60" rx="10" ry="10" fill="#0f172a"/>
+  <!-- caja interior -->
+  <rect x="8" y="10" width="48" height="36" rx="4" ry="4" fill="#ffffff" opacity="0.06"/>
+  <!-- chevrons </> -->
+  <g transform="translate(0,2)" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20,34 14,28 20,22"/>
+    <polyline points="44,22 50,28 44,34"/>
+  </g>
+  <!-- texto API REST -->
+  <text x="32" y="52" text-anchor="middle" font-family="Inter, Roboto, Arial, sans-serif" font-size="8.5" fill="#ffffff">
+    API REST
+  </text>
+</svg>

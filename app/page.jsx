@@ -75,13 +75,6 @@ export default function Home() {
             <Icono
               size={50}
               info={{
-                dir: "/django.svg",
-                nom: "Django",
-              }}
-            ></Icono>
-            <Icono
-              size={50}
-              info={{
                 dir: "/nodejs.svg",
                 nom: "Node",
               }}
@@ -89,8 +82,22 @@ export default function Home() {
             <Icono
               size={50}
               info={{
+                dir: "/nextjs_icon_dark.svg",
+                nom: "Next.js",
+              }}
+            ></Icono>
+            <Icono
+              size={50}
+              info={{
                 dir: "/React_dark.svg",
                 nom: "React",
+              }}
+            ></Icono>
+            <Icono
+              size={50}
+              info={{
+                dir: "/django.svg",
+                nom: "Django",
               }}
             ></Icono>
             <Icono
@@ -143,6 +150,25 @@ export default function Home() {
               info={{
                 dir: "/github-dark.svg",
                 nom: "GitHub",
+              }}
+            ></Icono>
+          </div>
+          <h3 className="mt-6 text-purple-600 text-lg font-semibold">
+            API y Herramientas
+          </h3>
+          <div className="flex flex-row flex-wrap">
+            <Icono
+              size={50}
+              info={{
+                dir: "/apirest.svg",
+                nom: "Api Rest",
+              }}
+            ></Icono>
+            <Icono
+              size={50}
+              info={{
+                dir: "/postman.svg",
+                nom: "Postman",
               }}
             ></Icono>
           </div>

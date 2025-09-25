@@ -18,17 +18,16 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch("/api/send-email", {
-      // Ruta corregida
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData), // Se envía sin `{ formData }`
+      body: JSON.stringify(formData),
     });
 
     const result = await response.json();
 
     if (result.success) {
       setMostraAlert(true);
-      setTimeout(() => setMostraAlert(false), 6000); // Oculta la alerta después de 8 segundos
+      setTimeout(() => setMostraAlert(false), 6000);
     } else {
       alert("Error al enviar el correo: " + result.error);
     }
@@ -36,7 +35,6 @@ const ContactForm = () => {
 
   return (
     <div>
-      {/* Alerta fuera del formulario y en la parte superior de la pantalla */}
       {mostraAlert && (
         <div className="fixed top-5 left-1/2 transform -translate-x-1/2 z-50">
           <Alert />

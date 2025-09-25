@@ -12,7 +12,7 @@ const CardCarousel = ({ proyectos }) => {
   const [mostrar, setMostrar] = useState(false);
 
   return (
-    <div className="w-full h-full m-8 py-4 sm:w-1/2 sm:h-auto md:w-1/2 md:h-auto lg:p-4 lg:w-2/5 lg:h-auto bg-stone-800 rounded-md">
+    <div className="w-full h-full m-8 py-4 sm:w-1/2 sm:h-auto md:w-1/2 md:h-auto lg:p-4 lg:w-2/5 lg:h-auto bg-stone-800 rounded-md transition-transform duration-300 hover:scale-[1.03] hover:shadow-2xl">
       <h3 className="text-center lg:font-semibold text-white">
         {proyectos.title}
       </h3>

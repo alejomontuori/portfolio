@@ -2,6 +2,7 @@ import "./global.css";
 import Image from "next/image";
 import Link from "next/link";
 import Squares from "./components/Squares";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function RootLayout({ children }) {
   return (
